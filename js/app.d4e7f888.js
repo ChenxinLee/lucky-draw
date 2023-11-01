@@ -1204,7 +1204,7 @@
 							t.showConfig = !0
 						}
 					}
-				}, [t._v(" Configuration ")])], 1), i("div", {
+				}, [t._v("    Config ")])], 1), i("div", {
 					class: {
 						mask: t.showRes
 					},
@@ -1406,7 +1406,7 @@
 					on: {
 						click: t.onSubmit
 					}
-				}, [t._v("Save configuration")]), i("el-button", {
+				}, [t._v("Save config")]), i("el-button", {
 					attrs: {
 						size: "mini"
 					},
@@ -1829,21 +1829,21 @@
 					attrs: {
 						label: " "
 					}
-				}, [i("span", [t._v(" 共 "), i("span", {
+				}, [i("span", [t._v(" Select "), i("span", {
 					staticClass: "colorred"
-				}, [t._v(t._s(t.config[t.form.category]))]), t._v(" 名 ")]), i("span", {
+				}, [t._v(t._s(t.config[t.form.category]))]), t._v(" Person ")]), i("span", {
 					style: {
 						marginLeft: "20px"
 					}
 				}, [t._v(" Remain "), i("span", {
 					staticClass: "colorred"
-				}, [t._v(t._s(t.remain))]), t._v(" 名 ")])]) : t._e(), i("el-form-item", {
+				}, [t._v(t._s(t.remain))]), t._v(" Person ")])]) : t._e(), i("el-form-item", {
 					attrs: {
-						label: "Select mode"
+						label: "Mode"
 					}
 				}, [i("el-select", {
 					attrs: {
-						placeholder: "Please select mode"
+						placeholder: "Please Mode"
 					},
 					model: {
 						value: t.form.mode,
@@ -1893,7 +1893,7 @@
 					}
 				})], 1) : t._e(), i("el-form-item", {
 					attrs: {
-						label: "All involved"
+						label: "All"
 					}
 				}, [i("el-switch", {
 					model: {
@@ -1907,7 +1907,7 @@
 					style: {
 						fontSize: "12px"
 					}
-				}, [t._v(" (if open, it will select among all involved.) ")])], 1), i("el-form-item", [i("el-button", {
+				}, [t._v(" (if open, it will select among All.) ")])], 1), i("el-form-item", [i("el-button", {
 					attrs: {
 						type: "primary"
 					},
@@ -2467,7 +2467,7 @@
 					transformList: function() {
 						var t = this,
 							e = this.listStr;
-						e || this.$message.error("没有数据");
+						e || this.$message.error("No data");
 						var i = [],
 							n = e.split("\n");
 						n && n.length > 0 && n.forEach((function(t) {
