@@ -1454,7 +1454,7 @@
 					}
 				})], 1), i("el-form-item", {
 					attrs: {
-						label: "Award One"
+						label: "Award"
 					}
 				}, [i("el-input", {
 					attrs: {
@@ -1586,7 +1586,7 @@
 			var e = "";
 			switch (t) {
 				case "firstPrize":
-					e = "Award";
+					e = "Award one";
 					break;
 				default:
 					break
@@ -1774,7 +1774,7 @@
 							t.showImport = !0
 						}
 					}
-				}, [t._v(" Import list ")]), i("el-button", {
+				}, [t._v(" Import List ")]), i("el-button", {
 					attrs: {
 						size: "mini"
 					},
@@ -1783,7 +1783,7 @@
 							t.showImportphoto = !0
 						}
 					}
-				}, [t._v(" Import picture ")]), i("el-dialog", {
+				}, [t._v(" Import Picture ")]), i("el-dialog", {
 					staticClass: "setwat-dialog",
 					attrs: {
 						"append-to-body": !0,
@@ -1804,7 +1804,7 @@
 					}
 				}, [i("el-form-item", {
 					attrs: {
-						label: "Award One"
+						label: "Award"
 					}
 				}, [i("el-select", {
 					attrs: {
@@ -1997,7 +1997,7 @@
 					}
 				}, [i("el-form-item", {
 					attrs: {
-						label: "Reset mode"
+						label: "Mode"
 					}
 				}, [i("el-radio-group", {
 					model: {
@@ -2012,7 +2012,7 @@
 						border: "",
 						label: 0
 					}
-				}, [t._v("Reset all data")]), i("el-radio", {
+				}, [t._v("ResetAllData")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 1
