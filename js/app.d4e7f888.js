@@ -1204,7 +1204,7 @@
 							t.showConfig = !0
 						}
 					}
-				}, [t._v("    Config ")])], 1), i("div", {
+				}, [t._v("Config ")])], 1), i("div", {
 					class: {
 						mask: t.showRes
 					},
@@ -1406,7 +1406,7 @@
 					on: {
 						click: t.onSubmit
 					}
-				}, [t._v("Save config")]), i("el-button", {
+				}, [t._v("Save")]), i("el-button", {
 					attrs: {
 						size: "mini"
 					},
@@ -1454,7 +1454,7 @@
 					}
 				})], 1), i("el-form-item", {
 					attrs: {
-						label: "Award"
+						label: "Award One"
 					}
 				}, [i("el-input", {
 					attrs: {
@@ -1804,7 +1804,7 @@
 					}
 				}, [i("el-form-item", {
 					attrs: {
-						label: "Award"
+						label: "Award One"
 					}
 				}, [i("el-select", {
 					attrs: {
@@ -1907,7 +1907,7 @@
 					style: {
 						fontSize: "12px"
 					}
-				}, [t._v(" (if open, it will select among All.) ")])], 1), i("el-form-item", [i("el-button", {
+				}, [t._v(" (if open, it will select among all.) ")])], 1), i("el-form-item", [i("el-button", {
 					attrs: {
 						type: "primary"
 					},
@@ -1997,7 +1997,7 @@
 					}
 				}, [i("el-form-item", {
 					attrs: {
-						label: "Reset选项"
+						label: "Reset mode"
 					}
 				}, [i("el-radio-group", {
 					model: {
@@ -2022,12 +2022,12 @@
 						border: "",
 						label: 2
 					}
-				}, [t._v("Reset List")]), i("el-radio", {
+				}, [t._v("ResetList")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 3
 					}
-				}, [t._v("Reset照片")]), i("el-radio", {
+				}, [t._v("ResetPicture")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 4
@@ -2039,7 +2039,7 @@
 					on: {
 						click: t.resetConfig
 					}
-				}, [t._v("Continue to reset")]), i("el-button", {
+				}, [t._v("Continue")]), i("el-button", {
 					on: {
 						click: function(e) {
 							t.showRemoveoptions = !1
@@ -2068,7 +2068,7 @@
 					attrs: {
 						for: "idinput"
 					}
-				}, [t._v("抽奖号码")]), i("el-input", {
+				}, [t._v("Lucky number")]), i("el-input", {
 					attrs: {
 						id: "idinput",
 						size: "mini",
@@ -2281,7 +2281,7 @@
 					return {
 						id: 0,
 						value: "",
-						filename: "点击选择照片"
+						filename: "Pick to select picture"
 					}
 				},
 				methods: {
@@ -2323,7 +2323,7 @@
 												value: i
 											}, U[s ? "edit" : "add"](N, s ? n : o, s ? o : null)
 											.then((function(t) {
-												t ? (a.$refs.uploadinput.value = "", a.value = "", a.filename = "点击选择照片", a.$emit("update:visible", !1), a.$emit("getPhoto"), a.$message({
+												t ? (a.$refs.uploadinput.value = "", a.value = "", a.filename = "Pick to select picture", a.$emit("update:visible", !1), a.$emit("getPhoto"), a.$message({
 													message: "Saved",
 													type: "success"
 												})) : a.$message.error("Faild to save")
@@ -2410,7 +2410,7 @@
 					resetConfig: function() {
 						var t = this,
 							e = this.removeInfo.type;
-						this.$confirm("Do you continue to reset the data?", "Tip", {
+						this.$confirm("Do you Continue the data?", "Tip", {
 								confirmButtonText: "Continue",
 								cancelButtonText: "Cancle",
 								type: "warning"
