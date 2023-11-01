@@ -1454,7 +1454,7 @@
 					}
 				})], 1), i("el-form-item", {
 					attrs: {
-						label: "一等奖"
+						label: "Award"
 					}
 				}, [i("el-input", {
 					attrs: {
@@ -1543,7 +1543,7 @@
 							t.showAddLottery = !1
 						}
 					}
-				}, [t._v("取消")])], 1)], 1)], 1)], 1)
+				}, [t._v("Cancle")])], 1)], 1)], 1)], 1)
 			},
 			h = [];
 		i("ac1f"), i("1276");
@@ -1586,7 +1586,7 @@
 			var e = "";
 			switch (t) {
 				case "firstPrize":
-					e = "一等奖";
+					e = "Award";
 					break;
 				default:
 					break
@@ -1730,7 +1730,7 @@
 							var o = v(i);
 							t[i] && e[i] > 0 && n.push({
 								key: s + 1,
-								title: "".concat(o, "抽奖结果:"),
+								title: "".concat(o, "Result:"),
 								value: "".concat(t[i].length > 0 ? t[i].join("、") : "暂未抽取")
 							})
 						})), n
@@ -1756,7 +1756,7 @@
 					on: {
 						click: t.startHandler
 					}
-				}, [t._v(t._s(t.running ? "停止" : "开始"))]), i("el-button", {
+				}, [t._v(t._s(t.running ? "Stop" : "Start"))]), i("el-button", {
 					attrs: {
 						size: "mini"
 					},
@@ -1765,7 +1765,7 @@
 							t.showRemoveoptions = !0
 						}
 					}
-				}, [t._v(" 重置 ")]), i("el-button", {
+				}, [t._v(" Reset ")]), i("el-button", {
 					attrs: {
 						size: "mini"
 					},
@@ -1774,7 +1774,7 @@
 							t.showImport = !0
 						}
 					}
-				}, [t._v(" 导入名单 ")]), i("el-button", {
+				}, [t._v(" Import list ")]), i("el-button", {
 					attrs: {
 						size: "mini"
 					},
@@ -1783,7 +1783,7 @@
 							t.showImportphoto = !0
 						}
 					}
-				}, [t._v(" 导入照片 ")]), i("el-dialog", {
+				}, [t._v(" Import picture ")]), i("el-dialog", {
 					staticClass: "setwat-dialog",
 					attrs: {
 						"append-to-body": !0,
@@ -1920,7 +1920,7 @@
 							t.showSetwat = !1
 						}
 					}
-				}, [t._v("取消")])], 1)], 1)], 1), i("el-dialog", {
+				}, [t._v("Cancle")])], 1)], 1)], 1), i("el-dialog", {
 					staticClass: "import-dialog",
 					attrs: {
 						"append-to-body": !0,
@@ -1964,7 +1964,7 @@
 							t.showImport = !1
 						}
 					}
-				}, [t._v("取消")])], 1)], 1), i("Importphoto", {
+				}, [t._v("Cancle")])], 1)], 1), i("Importphoto", {
 					attrs: {
 						visible: t.showImportphoto
 					},
@@ -1997,7 +1997,7 @@
 					}
 				}, [i("el-form-item", {
 					attrs: {
-						label: "重置选项"
+						label: "Reset选项"
 					}
 				}, [i("el-radio-group", {
 					model: {
@@ -2012,40 +2012,40 @@
 						border: "",
 						label: 0
 					}
-				}, [t._v("重置全部数据")]), i("el-radio", {
+				}, [t._v("Reset全部数据")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 1
 					}
-				}, [t._v("重置抽奖配置")]), i("el-radio", {
+				}, [t._v("ResetConfig")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 2
 					}
-				}, [t._v("重置名单")]), i("el-radio", {
+				}, [t._v("Reset名单")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 3
 					}
-				}, [t._v("重置照片")]), i("el-radio", {
+				}, [t._v("Reset照片")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 4
 					}
-				}, [t._v("重置抽奖结果")])], 1)], 1), i("el-form-item", [i("el-button", {
+				}, [t._v("ResetResult")])], 1)], 1), i("el-form-item", [i("el-button", {
 					attrs: {
 						type: "primary"
 					},
 					on: {
 						click: t.resetConfig
 					}
-				}, [t._v("确定重置")]), i("el-button", {
+				}, [t._v("确定Reset")]), i("el-button", {
 					on: {
 						click: function(e) {
 							t.showRemoveoptions = !1
 						}
 					}
-				}, [t._v("取消")])], 1)], 1)], 1)], 1)
+				}, [t._v("Cancle")])], 1)], 1)], 1)], 1)
 			},
 			L = [],
 			F = (i("498a"), function() {
@@ -2130,7 +2130,7 @@
 							return t.$emit("update:visible", !1)
 						}
 					}
-				}, [t._v("取消")])], 1)], 1)
+				}, [t._v("Cancle")])], 1)], 1)
 			}),
 			E = [],
 			j = (i("96cf"), i("1da1")),
@@ -2410,9 +2410,9 @@
 					resetConfig: function() {
 						var t = this,
 							e = this.removeInfo.type;
-						this.$confirm("此操作将重置所选数据，是否继续?", "提示", {
+						this.$confirm("此操作将Reset所选数据，是否继续?", "提示", {
 								confirmButtonText: "确定",
-								cancelButtonText: "取消",
+								cancelButtonText: "Cancle",
 								type: "warning"
 							})
 							.then((function() {
@@ -2437,7 +2437,7 @@
 								}
 								t.closeRes && t.closeRes(), t.showRemoveoptions = !1, t.$message({
 									type: "success",
-									message: "重置成功!"
+									message: "Reset成功!"
 								}), t.$nextTick((function() {
 									t.$emit("resetConfig")
 								}))
@@ -2445,7 +2445,7 @@
 							.catch((function() {
 								t.$message({
 									type: "info",
-									message: "已取消"
+									message: "已Cancle"
 								})
 							}))
 					},
@@ -2522,7 +2522,7 @@
 					style: {
 						fontSize: "18px"
 					}
-				}, [t._v(" 抽奖结果 ")]), i("span", {
+				}, [t._v(" Result ")]), i("span", {
 					style: {
 						fontSize: "14px",
 						color: "#999",
@@ -2587,7 +2587,7 @@
 							n = d(t.target, "res");
 						n && this.$confirm("此操作将移除该中奖号码，确认删除?", "警告", {
 								confirmButtonText: "确定",
-								cancelButtonText: "取消",
+								cancelButtonText: "Cancle",
 								type: "warning"
 							})
 							.then((function() {
@@ -2604,7 +2604,7 @@
 							.catch((function() {
 								i.$message({
 									type: "info",
-									message: "已取消"
+									message: "已Cancle"
 								})
 							}))
 					}
@@ -2848,7 +2848,7 @@
 		var _t = new zt["a"].Store({
 				state: {
 					config: {
-						name: "AAAAAA",
+						name: "Lucky draw",
 						number: 70,
 						firstPrize: 1
 					},
@@ -2862,7 +2862,7 @@
 				mutations: {
 					setClearConfig: function(t) {
 						t.config = {
-							name: "AAAAAA",
+							name: "Lucky draw",
 							number: 70,
 							firstPrize: 1
 						}, t.newLottery = []
@@ -2880,7 +2880,7 @@
 					},
 					setClearStore: function(t) {
 						t.config = {
-							name: "AAAAAA",
+							name: "Lucky draw",
 							number: 70,
 							firstPrize: 1
 						}, t.result = {
