@@ -2,7 +2,6 @@
   "name": "luckydraw",
   "version": "0.1.0",
   "private": true,
-  "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
@@ -27,9 +26,9 @@
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^4.13.0",
     "prettier": "^1.19.1",
-    "sass-loader": "^10.1.1",
+    "sass-loader": "^8.0.0",
     "vue-template-compiler": "^2.6.10"
   }
 }
