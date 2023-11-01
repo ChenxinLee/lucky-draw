@@ -1194,7 +1194,7 @@
 							t.showResult = !0
 						}
 					}
-				}, [t._v(" Result ")]), i("el-button", {
+                }, [t._v(" Result ")]), i("el-button", {
 					staticClass: "con",
 					attrs: {
 						type: "text"
@@ -1391,14 +1391,14 @@
 						fontSize: "16px",
 						marginRight: "20px"
 					}
-				}, [t._v(" Configuration ")]), i("el-button", {
+				}, [t._v(" Config ")]), i("el-button", {
 					attrs: {
 						size: "mini"
 					},
 					on: {
 						click: t.addLottery
 					}
-				}, [t._v("Increase awards")]), i("el-button", {
+				}, [t._v("Increase")]), i("el-button", {
 					attrs: {
 						size: "mini",
 						type: "primary"
@@ -1512,7 +1512,7 @@
 						slot: "title"
 					},
 					slot: "title"
-				}, [t._v("增加奖项")]), i("el-form", {
+				}, [t._v("Increase")]), i("el-form", {
 					ref: "newLottery",
 					attrs: {
 						model: t.newLottery,
@@ -1520,7 +1520,7 @@
 					}
 				}, [i("el-form-item", {
 					attrs: {
-						label: "奖项名称"
+						label: "Title"
 					}
 				}, [i("el-input", {
 					model: {
@@ -1537,7 +1537,7 @@
 					on: {
 						click: t.addHandler
 					}
-				}, [t._v("增加奖项")]), i("el-button", {
+				}, [t._v("Increase")]), i("el-button", {
 					on: {
 						click: function(e) {
 							t.showAddLottery = !1
@@ -1651,7 +1651,7 @@
 					onSubmit: function() {
 						var t = this;
 						l(g, this.form), this.$store.commit("setConfig", this.form), this.$emit("update:visible", !1), this.$message({
-							message: "保存成功",
+							message: "Saved",
 							type: "success"
 						}), this.$nextTick((function() {
 							t.$emit("resetconfig")
@@ -1731,7 +1731,7 @@
 							t[i] && e[i] > 0 && n.push({
 								key: s + 1,
 								title: "".concat(o, "Result:"),
-								value: "".concat(t[i].length > 0 ? t[i].join("、") : "暂未抽取")
+								value: "".concat(t[i].length > 0 ? t[i].join("、") : "Not Done")
 							})
 						})), n
 					}
@@ -1804,11 +1804,11 @@
 					}
 				}, [i("el-form-item", {
 					attrs: {
-						label: "抽取奖项"
+						label: "Award"
 					}
 				}, [i("el-select", {
 					attrs: {
-						placeholder: "请选取本次抽取的奖项"
+						placeholder: "Please select award"
 					},
 					model: {
 						value: t.form.category,
@@ -1835,15 +1835,15 @@
 					style: {
 						marginLeft: "20px"
 					}
-				}, [t._v(" 剩余 "), i("span", {
+				}, [t._v(" Remain "), i("span", {
 					staticClass: "colorred"
 				}, [t._v(t._s(t.remain))]), t._v(" 名 ")])]) : t._e(), i("el-form-item", {
 					attrs: {
-						label: "抽取方式"
+						label: "Select mode"
 					}
 				}, [i("el-select", {
 					attrs: {
-						placeholder: "请选取本次抽取方式"
+						placeholder: "Please select mode"
 					},
 					model: {
 						value: t.form.mode,
@@ -1854,22 +1854,22 @@
 					}
 				}, [i("el-option", {
 					attrs: {
-						label: "抽1人",
+						label: "1 person",
 						value: 1
 					}
 				}), i("el-option", {
 					attrs: {
-						label: "抽5人",
+						label: "5 person",
 						value: 5
 					}
 				}), i("el-option", {
 					attrs: {
-						label: "一次抽取完",
+						label: "all person",
 						value: 0
 					}
 				}), i("el-option", {
 					attrs: {
-						label: "自定义",
+						label: "customized",
 						value: 99
 					}
 				})], 1)], 1), 99 === t.form.mode ? i("el-form-item", {
@@ -1893,7 +1893,7 @@
 					}
 				})], 1) : t._e(), i("el-form-item", {
 					attrs: {
-						label: "全员参与"
+						label: "All involved"
 					}
 				}, [i("el-switch", {
 					model: {
@@ -1907,14 +1907,14 @@
 					style: {
 						fontSize: "12px"
 					}
-				}, [t._v(" (开启后将在全体成员[无论有无中奖]中抽奖) ")])], 1), i("el-form-item", [i("el-button", {
+				}, [t._v(" (if open, it will select among all involved.) ")])], 1), i("el-form-item", [i("el-button", {
 					attrs: {
 						type: "primary"
 					},
 					on: {
 						click: t.onSubmit
 					}
-				}, [t._v("立即抽奖")]), i("el-button", {
+				}, [t._v("Draw now")]), i("el-button", {
 					on: {
 						click: function(e) {
 							t.showSetwat = !1
@@ -1936,7 +1936,7 @@
 					attrs: {
 						type: "textarea",
 						rows: 10,
-						placeholder: "请输入对应的号码和名单(可直接从excel复制)，格式(号码 名字)，导入的名单将代替号码显示在抽奖中。如：\n1 张三\n2 李四\n3 王五\n\t\t\t\t"
+						placeholder: ""
 					},
 					model: {
 						value: t.listStr,
@@ -1955,7 +1955,7 @@
 					on: {
 						click: t.transformList
 					}
-				}, [t._v("确定")]), i("el-button", {
+				}, [t._v("Continue")]), i("el-button", {
 					attrs: {
 						size: "mini"
 					},
@@ -2012,7 +2012,7 @@
 						border: "",
 						label: 0
 					}
-				}, [t._v("Reset全部数据")]), i("el-radio", {
+				}, [t._v("Reset all data")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 1
@@ -2022,7 +2022,7 @@
 						border: "",
 						label: 2
 					}
-				}, [t._v("Reset名单")]), i("el-radio", {
+				}, [t._v("Reset List")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 3
@@ -2039,7 +2039,7 @@
 					on: {
 						click: t.resetConfig
 					}
-				}, [t._v("确定Reset")]), i("el-button", {
+				}, [t._v("Continue to reset")]), i("el-button", {
 					on: {
 						click: function(e) {
 							t.showRemoveoptions = !1
@@ -2087,7 +2087,7 @@
 					attrs: {
 						for: "idinput"
 					}
-				}, [t._v("照片选择")]), i("span", {
+				}, [t._v("Select picture")]), i("span", {
 					staticClass: "selectbg",
 					attrs: {
 						"data-tip": t.filename
@@ -2104,14 +2104,14 @@
 					}
 				})])]), i("el-row", {
 					staticClass: "photo"
-				}, [i("label", [t._v("已选照片")]), t.value ? i("img", {
+				}, [i("label", [t._v("Picture Selected")]), t.value ? i("img", {
 					attrs: {
 						src: t.value,
 						alt: "img",
 						width: 140,
 						height: 140
 					}
-				}) : i("span", [t._v("暂未选择")])]), i("el-row", [t._v(" 支持jpg和png，照片大小不能超过150kb,建议20-50kb，建议尺寸为160*160px ")]), i("el-row", {
+				}) : i("span", [t._v("Not Selected")])]), i("el-row", [t._v("  ")]), i("el-row", {
 					staticClass: "center"
 				}, [i("el-button", {
 					attrs: {
@@ -2121,7 +2121,7 @@
 					on: {
 						click: t.saveHandler
 					}
-				}, [t._v("保存")]), i("el-button", {
+				}, [t._v("Save")]), i("el-button", {
 					attrs: {
 						size: "mini"
 					},
@@ -2324,9 +2324,9 @@
 											}, U[s ? "edit" : "add"](N, s ? n : o, s ? o : null)
 											.then((function(t) {
 												t ? (a.$refs.uploadinput.value = "", a.value = "", a.filename = "点击选择照片", a.$emit("update:visible", !1), a.$emit("getPhoto"), a.$message({
-													message: "保存成功",
+													message: "Saved",
 													type: "success"
-												})) : a.$message.error("保存失败")
+												})) : a.$message.error("Faild to save")
 											}))
 											.catch((function(t) {
 												a.$message.error(t.message)
@@ -2410,8 +2410,8 @@
 					resetConfig: function() {
 						var t = this,
 							e = this.removeInfo.type;
-						this.$confirm("此操作将Reset所选数据，是否继续?", "提示", {
-								confirmButtonText: "确定",
+						this.$confirm("Do you continue to reset the data?", "Tip", {
+								confirmButtonText: "Continue",
 								cancelButtonText: "Cancle",
 								type: "warning"
 							})
@@ -2437,7 +2437,7 @@
 								}
 								t.closeRes && t.closeRes(), t.showRemoveoptions = !1, t.$message({
 									type: "success",
-									message: "Reset成功!"
+									message: "Successed to reset!"
 								}), t.$nextTick((function() {
 									t.$emit("resetConfig")
 								}))
@@ -2445,18 +2445,18 @@
 							.catch((function() {
 								t.$message({
 									type: "info",
-									message: "已Cancle"
+									message: "Cancled"
 								})
 							}))
 					},
 					onSubmit: function() {
-						if (!this.form.category) return this.$message.error("请选择本次抽取的奖项");
-						if (this.remain <= 0) return this.$message.error("该奖项剩余人数不足");
+						if (!this.form.category) return this.$message.error("Please select award");
+						if (this.remain <= 0) return this.$message.error("There are not enough people.");
 						if (99 === this.form.mode) {
-							if (this.form.qty <= 0) return this.$message.error("必须输入本次抽取人数");
-							if (this.form.qty > this.remain) return this.$message.error("本次抽奖人数已超过本奖项的剩余人数")
+							if (this.form.qty <= 0) return this.$message.error("Please input the number of select.");
+							if (this.form.qty > this.remain) return this.$message.error("The number of people in the draw has exceeded.")
 						}
-						if ((1 === this.form.mode || 5 === this.form.mode) && this.form.mode > this.remain) return this.$message.error("本次抽奖人数已超过本奖项的剩余人数");
+						if ((1 === this.form.mode || 5 === this.form.mode) && this.form.mode > this.remain) return this.$message.error("The number of people in the draw has exceeded.");
 						this.showSetwat = !1, this.$emit("toggle", Object.assign({}, this.form, {
 							remain: this.remain
 						}))
@@ -2481,7 +2481,7 @@
 								})
 							}
 						})), this.$store.commit("setList", i), this.$message({
-							message: "保存成功",
+							message: "Saved",
 							type: "success"
 						}), this.showImport = !1, this.$nextTick((function() {
 							t.$emit("resetConfig")
@@ -2528,7 +2528,7 @@
 						color: "#999",
 						marginLeft: "10px"
 					}
-				}, [t._v(" (点击号码可以删除) ")])]), t._l(t.resultList, (function(e, n) {
+				}, [t._v(" (Pick number to delete) ")])]), t._l(t.resultList, (function(e, n) {
 					return i("div", {
 						key: n,
 						staticClass: "listrow",
@@ -2585,8 +2585,8 @@
 					deleteRes: function(t, e) {
 						var i = this,
 							n = d(t.target, "res");
-						n && this.$confirm("此操作将移除该中奖号码，确认删除?", "警告", {
-								confirmButtonText: "确定",
+						n && this.$confirm("Are you sure to delete?", "Warn", {
+								confirmButtonText: "Continue",
 								cancelButtonText: "Cancle",
 								type: "warning"
 							})
@@ -2597,14 +2597,14 @@
 										return t !== Number(n)
 									})), i.result = t, i.$message({
 										type: "success",
-										message: "删除成功!"
+										message: "Deleted!"
 									})
 								}
 							}))
 							.catch((function() {
 								i.$message({
 									type: "info",
-									message: "已Cancle"
+									message: "Cancled"
 								})
 							}))
 					}
