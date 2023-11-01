@@ -1194,7 +1194,7 @@
 							t.showResult = !0
 						}
 					}
-				}, [t._v(" 抽奖结果 ")]), i("el-button", {
+				}, [t._v(" Result ")]), i("el-button", {
 					staticClass: "con",
 					attrs: {
 						type: "text"
@@ -1204,7 +1204,7 @@
 							t.showConfig = !0
 						}
 					}
-				}, [t._v(" 抽奖配置 ")])], 1), i("div", {
+				}, [t._v(" Configuration ")])], 1), i("div", {
 					class: {
 						mask: t.showRes
 					},
@@ -1252,7 +1252,7 @@
 							t.showRes = !1
 						}
 					}
-				}, [t._v(t._s(t.categoryName) + "抽奖结果：")]), i("div", {
+				}, [t._v(t._s(t.categoryName) + "Result：")]), i("div", {
 					staticClass: "container"
 				}, t._l(t.resArr, (function(e) {
 					return i("span", {
@@ -1360,7 +1360,7 @@
 					attrs: {
 						src: t.audioSrc
 					}
-				}), t._v(" 你的浏览器不支持audio标签 ")])], 1)
+				}), t._v(" Your browser does not support the audio tag ")])], 1)
 			},
 			o = [],
 			a = (i("99af"), i("7db0"), i("d81d"), i("b0c0"), i("159b"), i("ade3")),
@@ -1391,14 +1391,14 @@
 						fontSize: "16px",
 						marginRight: "20px"
 					}
-				}, [t._v(" 抽奖配置 ")]), i("el-button", {
+				}, [t._v(" Configuration ")]), i("el-button", {
 					attrs: {
 						size: "mini"
 					},
 					on: {
 						click: t.addLottery
 					}
-				}, [t._v("增加奖项")]), i("el-button", {
+				}, [t._v("Increase awards")]), i("el-button", {
 					attrs: {
 						size: "mini",
 						type: "primary"
@@ -1406,7 +1406,7 @@
 					on: {
 						click: t.onSubmit
 					}
-				}, [t._v("保存配置")]), i("el-button", {
+				}, [t._v("Save configuration")]), i("el-button", {
 					attrs: {
 						size: "mini"
 					},
@@ -1415,7 +1415,7 @@
 							return t.$emit("update:visible", !1)
 						}
 					}
-				}, [t._v("取消")])], 1), i("div", {
+				}, [t._v("Cancle")])], 1), i("div", {
 					staticClass: "container"
 				}, [i("el-form", {
 					ref: "form",
@@ -1425,7 +1425,7 @@
 					}
 				}, [i("el-form-item", {
 					attrs: {
-						label: "抽奖标题"
+						label: "Title"
 					}
 				}, [i("el-input", {
 					model: {
@@ -1437,7 +1437,7 @@
 					}
 				})], 1), i("el-form-item", {
 					attrs: {
-						label: "抽奖总人数"
+						label: "Number"
 					}
 				}, [i("el-input", {
 					attrs: {
@@ -2848,7 +2848,7 @@
 		var _t = new zt["a"].Store({
 				state: {
 					config: {
-						name: "年会抽奖",
+						name: "AAAAAA",
 						number: 70,
 						firstPrize: 1
 					},
@@ -2862,7 +2862,7 @@
 				mutations: {
 					setClearConfig: function(t) {
 						t.config = {
-							name: "年会抽奖",
+							name: "AAAAAA",
 							number: 70,
 							firstPrize: 1
 						}, t.newLottery = []
@@ -2880,7 +2880,7 @@
 					},
 					setClearStore: function(t) {
 						t.config = {
-							name: "年会抽奖",
+							name: "AAAAAA",
 							number: 70,
 							firstPrize: 1
 						}, t.result = {
