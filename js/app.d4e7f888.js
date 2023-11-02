@@ -2012,27 +2012,27 @@
 						border: "",
 						label: 0
 					}
-				}, [t._v("ResetAllData")]), i("el-radio", {
+				}, [t._v("Reset All Data")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 1
 					}
-				}, [t._v("ResetConfig")]), i("el-radio", {
+				}, [t._v("Reset Config")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 2
 					}
-				}, [t._v("ResetList")]), i("el-radio", {
+				}, [t._v("Reset List")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 3
 					}
-				}, [t._v("ResetPicture")]), i("el-radio", {
+				}, [t._v("Reset Picture")]), i("el-radio", {
 					attrs: {
 						border: "",
 						label: 4
 					}
-				}, [t._v("ResetResult")])], 1)], 1), i("el-form-item", [i("el-button", {
+				}, [t._v("Reset Result")])], 1)], 1), i("el-form-item", [i("el-button", {
 					attrs: {
 						type: "primary"
 					},
