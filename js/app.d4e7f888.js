@@ -2541,7 +2541,7 @@
 						staticClass: "name"
 					}, [t._v(" " + t._s(e.name) + " ")]), i("span", {
 						staticClass: "value"
-					}, [e.value && 0 === e.value.length ? i("span", [t._v(" 暂未抽奖 ")]) : t._e(), t._l(e.value, (function(e, n) {
+					}, [e.value && 0 === e.value.length ? i("span", [t._v(" No prize drawn ")]) : t._e(), t._l(e.value, (function(e, n) {
 						return i("span", {
 							key: n,
 							staticClass: "card",
