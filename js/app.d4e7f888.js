@@ -1586,7 +1586,7 @@
 			var e = "";
 			switch (t) {
 				case "firstPrize":
-					e = "Award One  ";
+					e = "The First Prize  ";
 					break;
 				default:
 					break
